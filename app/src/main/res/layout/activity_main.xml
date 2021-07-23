@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Pet Boarding" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumberOfDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of days"
+        android:inputType="number"
+        />
+
+    <Spinner
+        android:id="@+id/pets_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/pet_array"
+        />
+
+    <EditText
+        android:id="@+id/editTextBoardingDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Boarding Date"
+        android:inputType="datetime" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVaccinated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is your pet vaccinated?" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Request" />
+</LinearLayout>
